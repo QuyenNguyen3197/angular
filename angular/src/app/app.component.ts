@@ -10,4 +10,16 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'angular';
+  showTest: boolean = false;
+
+  handleShowTest(){
+    this.showTest =true;
+  }
+
+  handleHideTest(){
+    // this.showTest = !this.showTest;
+    // this.title = "show test success";
+    // console.log("12");
+    this.showTest =false;
+  }
 }
